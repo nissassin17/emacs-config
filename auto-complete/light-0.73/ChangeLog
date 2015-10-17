@@ -1,0 +1,137 @@
+2005-10-03  John H Palmieri  <palmieri@math.washington.edu>
+
+	* lisp/light.el (lc-query-replace-read-args): patch to pass
+	different arguments...
+
+2005-09-30  John H Palmieri  <palmieri@math.washington.edu>
+
+	* light.el: released version 0.72.
+
+	* lisp/light.el (lc-emacs-21-p): changed to recognize also GNU
+	Emacs 22 (or later).
+
+2003-05-27  John H Palmieri  <palmieri@math.washington.edu>
+
+	* lisp/light.el (lc-custom-p): made into a defvar, instead of a
+	defconst.
+	
+	(lc-key-description): now just an alias to key-description.
+
+2002-06-05  John H Palmieri  <palmieri@math.washington.edu>
+
+	* all: released version 0.71.
+
+2002-05-28  John H Palmieri  <palmieri@math.washington.edu>
+
+	* lisp/light.el (lc-quit): partial fix for position of point in
+	GNU Emacs 21.  (bug in (current-window-configuration))
+
+2002-05-23  John H Palmieri  <palmieri@math.washington.edu>
+
+	* lisp/light.el (lc-minibuffer-prompt-width): tinkered with
+	this.
+
+2002-05-17  John H Palmieri  <palmieri@math.washington.edu>
+
+	* lisp/light.el (lc-key-description): obsolete?  Just use
+	key-description instead.
+
+2001-10-25  John H. Palmieri  <palmieri@math.washington.edu>
+
+	* all: released version 0.70.
+
+2001-06-22  John H. Palmieri  <palmieri@math.washington.edu>
+
+	* lisp/light.el (completing-insert-ispell-word): new function:
+	complete words using ispell.  Bound to `C-x c i' if
+	lc-ctrl-x-c-is-completion is set.
+
+	* lisp/light.el (lc-complete-BLAH): new functions, aliases for
+	completing-insert-BLAH.
+
+
+2001-05-14  John H. Palmieri  <palmieri@math.washington.edu>
+
+	* all: released version 0.69.
+
+2001-02-09  John H. Palmieri  <palmieri@math.washington.edu>
+
+	* all: released version 0.68.
+
+	* lisp/ultex.el (ultex-version): new variable
+
+2001-02-02  John H. Palmieri  <palmieri@math.washington.edu>
+
+	* lisp/light.el (lc-emacs-21-p): new variable.
+
+	* lisp/light.el (lc-minibuffer-prompt-width): new function: 0
+	unless using GNU Emacs 21; else minibuffer-prompt-width.
+
+	* lisp/light.el (lightning-completion): use
+	lc-minibuffer-prompt-width.
+
+2000-10-09  John H. Palmieri  <palmieri@math.washington.edu>
+
+	* all: released version 0.67.
+	
+	* lisp/light.el (light-mode-map): fixed some spurious entries in
+	keymap when using XEmacs.
+
+	* lisp/light.el (lc-display-completions): fix bug--sometimes
+	lc-stack wasn't cleared, so hitting TAB would try to make active
+	and scroll a non-existent completions buffer--so make sure
+	completions buffer exists before trying to scroll it.
+
+	* lisp/light.el (lc-quit): don't run set-window-configuration in
+	XEmacs if point is in minibuffer.
+	
+2000-09-15  John H. Palmieri  <palmieri@math.washington.edu>
+
+	* all: released version 0.66.
+
+	* lisp/light.el (lc-quit): don't run set-window-configuration in XEmacs.
+
+2000-08-03  John H. Palmieri  <palmieri@math.washington.edu>
+
+	* all: released version 0.65.
+
+1999-10-22  John Palmieri  <palmieri@math.washington.edu>
+
+	* texi/light.texi: fixed a few little typos.
+
+1999-08-12  John Palmieri  <palmieri@math.washington.edu>
+
+	* all: released version 0.64.
+	
+1999-06-29  John H. Palmieri  <palmieri@math.washington.edu>
+
+	* all: released version 0.63.
+
+	* all: changed my e-mail address, URL.
+
+1999-05-11  John H. Palmieri  <palmieri@math.washington.edu>
+
+	* all: released version 0.62.
+	
+1999-05-10  John H. Palmieri  <palmieri@math.washington.edu>
+
+	* all: released version 0.61.
+
+	* lisp/light.el (light-mode-map): bind meta keys to lc-exit-and-then.
+
+1999-05-10  John H Palmieri  <palmieri@math.washington.edu>
+
+	* lisp/light.el: replace `unless' by something that works
+	pre-Emacs 20.  Same thing in ultex.el.
+
+1999-05-07  John H. Palmieri  <palmieri@math.washington.edu>
+
+	* lisp/light.el: (require 'cl) if caar is not defined.
+
+1999-04-28  John H. Palmieri  <palmieri@math.washington.edu>
+
+	* all: released version 0.60.
+
+	* all: split latex-symbol, lightning-completion packages into
+	their own packages.  See ChangeLog.old for a list of old changes.
+

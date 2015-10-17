@@ -1,0 +1,103 @@
+;; fix for new semantic of emacs from 23.2
+(require 'semantic/db)
+(provide 'semanticdb)
+
+(require 'semantic/db-ref)
+(provide 'semanticdb-ref)
+
+(require 'semantic/db-find)
+(provide 'semanticdb-find)
+
+(require 'semantic/db-mode)
+(provide 'semanticdb-mode)
+
+(require 'semantic/db-file)
+(provide 'semanticdb-file)
+
+(require 'semantic/ctxt)
+(provide 'semantic-ctxt)
+
+(require 'semantic/fw)
+(provide 'semantic-fw)
+
+(require 'semantic/db)
+(provide 'semanticdb)
+
+(require 'semantic/util)
+(provide 'semantic-util)
+
+(require 'semantic/doc)
+(provide 'semantic-doc)
+
+(require 'semantic/tag)
+(provide 'semantic-tag)
+
+(require 'semantic/lex)
+(provide 'semantic-lex)
+
+(require 'semantic/find)
+(provide 'semantic-find)
+
+(require 'semantic/format)
+(provide 'semantic-format)
+
+(require 'semantic/sort)
+(provide 'semantic-sort)
+
+(require 'semantic/find)
+(provide 'semantic-find)
+
+(require 'semantic/idle)
+(provide 'semantic-idle)
+
+(require 'semantic/imenu)
+(provide 'semantic-imenu)
+
+(require 'semantic/scope)
+(provide 'semantic-scope)
+
+(require 'semantic/analyze)
+(provide 'semantic-analyze)
+
+(require 'semantic/decorate/mode)
+(provide 'semantic-decorate/mode)
+
+(require 'semantic/mru-bookmark)
+(provide 'semantic-mru-bookmark)
+
+(require 'semantic/util-modes)
+(provide 'semantic-util-modes)
+
+(require 'semantic/decorate)
+(provide 'semantic-decorate)
+
+(require 'semantic/tag-ls)
+(provide 'semantic-tag-ls)
+
+(require 'semantic/senator)
+(provide 'semantic-senator)
+
+(global-ede-mode 1)
+(semantic-mode 1)
+
+;; lex-debuger
+(setq semantic-lex-debug-analyzers t)
+
+;; dump parse
+(setq semantic-dump-parse t)
+(setq semantic-dump-parser-warnings t)
+
+;; submode
+(global-semanticdb-minor-mode 1)
+;; do some thing ==> make emacs (very) lower
+(global-semantic-idle-scheduler-mode 0)
+(setq semantic-idle-scheduler-verbose-flag nil) ;show what semantic-idle-scheduler is doing
+;; show tag (variable, defun, ...)
+(global-semantic-idle-summary-mode 1)
+;; turn off
+(global-semantic-idle-completions-mode 0)
+(global-semantic-decoration-mode 1)
+;; highlight current function
+;;(global-semantic-highlight-func-mode 1)
+;;(global-semantic-stickyfunc-mode 1)
+(global-semantic-mru-bookmark-mode 1)

@@ -1,0 +1,11 @@
+haidang-config INSTALL instruction.
+Time-stamp: <2012-05-29 09:06:40 haidang-ubuntu>
+
+Do following steps.
+- Copy main directory, keeping exact file name, named `emacs-haidang` into HOME folder:
+cp ./emacs-haidang ~/ -r
+- Append this line to your emacs configuration file (default: ~/.emacs)
+(load (expand-file-name "~/emacs-haidang/all.el"))
+- Restart emacs.
+
+S_have fun! :)

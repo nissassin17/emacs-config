@@ -1,0 +1,53 @@
+haidang-config for emacs.
+Time-stamp: <2012-05-29 09:02:39 haidang-ubuntu>
+
+*Summarize: I seperate settings into 4 groups
+
+**auto-complete: auto show and complete code when editting.
+
+***auto-complete: main plug-in.
+***ac-java: java auto complete.
+***ac-slime.
+***bmonkey.
+***company-mode.
+***light.
+***ultratex.
+***auto-buff-complete (subgroup)
+***fuzzy: guest what to complete.
+***popup.
+***...
+
+**develelopment:
+
+***ecb: project management.
+***flymake: check syntax.
+***auctex: latex edtting mode.
+***jdee: java development environment for Emacs.
+***cedet setting: collection of Emacs Development Environment Tools.
+This tools are included from Emacs 23.3.1. So that many settings should be manualy configured.
+***slime: The Superior Lisp Interation Mode for Emacs.
+***gcc-sense.
+***...
+
+**display:
+***iswitchb: switch in ice style
+***maxframe: configuration for largest view.
+***pp-c-l: pretty control l-mode.
+***...
+
+**edtting:
+***auto-insert
+***ibus: input English other language.
+***kill-ring-search: search in kill ring.
+***some macros and key binding:
+****C-S-j: c-new-defun.
+****C-:: c-structure-dereference.
+****disable mouse.
+****...
+***goto-char-vim: goto char like vim.
+***...
+
+**Emacs libraries: for Emacs extension developer.
+***elib
+
+*INSTALL: see `INSTALL` for detail.

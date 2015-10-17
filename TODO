@@ -1,0 +1,9 @@
+TODO
+Time-stamp: <2012-05-29 09:07:02 haidang-ubuntu>
+
+*ajc-java-complete
+**complete java code with structure field, subclass ... like gccsense project.
+*iswitch in find-file
+**show auto-complete list when `find-file in ice style.
+*enum extracter to ac
+**write script to extract enum in header file to udpate auto-complete dictionaries.
