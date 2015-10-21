@@ -41,19 +41,19 @@
 ;;(load (expand-file-name "~/emacs-haidang/development/gccsense-load.el"))
 
 ;; all java here
-(load (expand-file-name "~/emacs-haidang/development/java-load.el"))
+;(load (expand-file-name "~/emacs-haidang/development/java-load.el"))
 
 ;; slime mode
-(load (expand-file-name "~/emacs-haidang/development/slime-load.el"))
+;(load (expand-file-name "~/emacs-haidang/development/slime-load.el"))
 
 ;; for LaTeX
 ;;(load (expand-file-name "~/emacs-haidang/development/auctex-load.el"))
 
 ;; ecb -- emacs code browser
-(load (expand-file-name "~/emacs-haidang/development/ecb-load.el"))
+;(load (expand-file-name "~/emacs-haidang/development/ecb-load.el"))
 
 ;; immediately compilational error checking.
 ;; Collision with (global-ede-mode 1) command if loading before it.
 ;;(load (expand-file-name "~/emacs-haidang/development/flymake-load.el"))
 
-(c-toggle-hungry-state 1)
+;(c-toggle-hungry-state 1)

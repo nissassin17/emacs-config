@@ -30,7 +30,7 @@
 (add-to-list 'load-path (expand-file-name "~/emacs-haidang/development/slime/"))  ; your SLIME directory
 (add-to-list 'load-path (expand-file-name "~/emacs-haidang/development/slime/contrib"))
 (setq inferior-lisp-program "/usr/bin/sbcl") ; your Lisp system
-(require 'slime)
+;(require 'slime)
 (require 'slime-autoloads)
 (slime-setup)
 

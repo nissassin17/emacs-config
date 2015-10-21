@@ -29,8 +29,8 @@
 ;;(add-hook 'window-setup-hook 'maximize-frame)
 
 (menu-bar-mode t)
-(tool-bar-mode nil)
-(set-scroll-bar-mode nil)
+;(tool-bar-mode nil)
+;(set-scroll-bar-mode nil)
 (defun toggle-fullscreen (&optional f)
   (interactive)
   (let ((current-value (frame-parameter nil 'fullscreen)))

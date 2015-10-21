@@ -59,8 +59,9 @@
 
 
 ;; andersl java font lock
-(load (expand-file-name "~/emacs-haidang/development/andersl-java-font-lock.el"))
-(add-hook 'java-mode-hook 'my-java-mode-hook)
+;; edit here : 2015 / 10 / 17
+;;(load (expand-file-name "~/emacs-haidang/development/andersl-java-font-lock.el"))
+;;(add-hook 'java-mode-hook 'my-java-mode-hook)
 
 (defun my-java-mode-hook ()
   (cond (window-system
